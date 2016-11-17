@@ -19,8 +19,7 @@ class AdminController extends \humhub\modules\admin\components\Controller
     }
 
     public function actionIndex()
-    {
-        
+    {        
         $form = new \humhub\modules\humhubchat\forms\SettingsForm();
         if ($form->load(Yii::$app->request->post())) {
             if ($form->validate()) {

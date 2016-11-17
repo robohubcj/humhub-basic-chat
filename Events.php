@@ -21,13 +21,13 @@ class Events extends \yii\base\Object
             'sortOrder' => 0
         ]);
         $event->sender->view->registerjsVar('chat_ListUsers', Url::to([
-            '/humhub-chat/chat/users'
+            '/humhub_chat/chat/users'
         ]));
         $event->sender->view->registerjsVar('chat_Submit', Url::to([
-            '/humhub-chat/chat/submit'
+            '/humhub_chat/chat/submit'
         ]));
         $event->sender->view->registerjsVar('chat_GetChats', Url::to([
-            '/humhub-chat/chat/chats'
+            '/humhub_chat/chat/chats'
         ]));
     }
 
@@ -56,7 +56,7 @@ class Events extends \yii\base\Object
     {
         $event->sender->addItem([
             'label' => Yii::t('HumhubChatModule.base', 'Basic Chat'),
-            'url' => Url::toRoute('/humhub-chat/admin/index'),
+            'url' => Url::to(['/humhub_chat/admin']),
             'group' => 'settings',
             'icon' => '<i class="fa fa-weixin"></i>',
             'isActive' => Yii::$app->controller->module && Yii::$app->controller->module->id == 'humhub_chat' && Yii::$app->controller->id == 'admin',

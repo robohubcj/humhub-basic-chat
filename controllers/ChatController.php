@@ -38,8 +38,8 @@ class ChatController extends \humhub\components\Controller
                 'author' => [
                     'name' => $entry->user->displayName,
                     'gravatar' => $entry->user->getProfileImage()->getUrl(),
-                    'profile' => Url::toRoute([
-                        '/',
+                    'profile' => Url::toRoute([                                                
+                        '/user/profile',
                         'uguid' => $entry->user->guid
                     ])
                 ],
@@ -49,7 +49,6 @@ class ChatController extends \humhub\components\Controller
                 ]
             ];
         }
-        
         Yii::$app->response->format = 'json';
         return $response;
     }
@@ -73,8 +72,8 @@ class ChatController extends \humhub\components\Controller
             $response[] = [
                 'name' => $user->displayName,
                 'gravatar' => $user->getProfileImage()->getUrl(),
-                'profile' => Url::toRoute([
-                    '/',
+                'profile' => Url::toRoute([                    
+                    '/user/profile',
                     'uguid' => $user->guid
                 ])
             ];

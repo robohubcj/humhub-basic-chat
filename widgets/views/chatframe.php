@@ -9,7 +9,7 @@
       <div id="chatUsers" class="rounded"></div>
       <div id="chatBottomBar" class="rounded">
         <div class="tip"></div>
-        <form id="submitForm" action="<?=Url::toRoute('/humhub-chat/chat/submit')?>" method="post" _lpchecked="1">
+        <form id="submitForm" action="<?=Url::toRoute('/humhub_chat/chat/submit')?>" method="post" _lpchecked="1">
           <div class="input-group">
             <input id="chatText" type="text" name="chatText" placeholder="<?=Yii::t('HumhubChatModule.base', 'Type Message ...')?>" class="form-control" maxlength="510">
             <span class="input-group-btn">
