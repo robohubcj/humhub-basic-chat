@@ -47,10 +47,10 @@ class UserChatMessage extends \humhub\components\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => Yii::t('Humhub-chatModule.base', 'ID'),
-            'message' => Yii::t('Humhub-chatModule.base', 'message'),
-            'created_at' => Yii::t('Humhub-chatModule.base', 'created'),
-            'created_by' => Yii::t('Humhub-chatModule.base', 'author')
+            'id' => Yii::t('HumhubChatModule.base', 'ID'),
+            'message' => Yii::t('HumhubChatModule.base', 'message'),
+            'created_at' => Yii::t('HumhubChatModule.base', 'created'),
+            'created_by' => Yii::t('HumhubChatModule.base', 'author')
         ];
     }
 }

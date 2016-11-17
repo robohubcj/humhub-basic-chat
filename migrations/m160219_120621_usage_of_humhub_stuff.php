@@ -22,8 +22,8 @@ class m160219_120621_usage_of_humhub_stuff extends Migration
                 ->notNull()
         ]);
         
-        Setting::Set('theme', 'theme_bright.css', 'humhubchat');
-        Setting::Set('timeout', '1', 'humhubchat');
+        //Setting::Set('theme', 'theme_bright.css', 'humhub_chat');
+        Setting::Set('timeout', '1', 'humhub_chat');
     }
 
     public function down()

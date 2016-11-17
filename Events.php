@@ -36,7 +36,7 @@ class Events extends \yii\base\Object
         $controller = $event->sender;
         $controller->stdout("Deleting old chat_messages... ");
         
-        $timeout = Setting::Get('timeout', 'humhubchat');
+        $timeout = Setting::Get('timeout', 'humhub_chat');
         if (! $timeout || $timeout == null || $timeout <= 0) {
             $controller->stdout('skipped! no timeout set.' . PHP_EOL, \yii\helpers\Console::FG_YELLOW);
             return;
@@ -55,11 +55,11 @@ class Events extends \yii\base\Object
     public static function onAdminMenuInit(\yii\base\Event $event)
     {
         $event->sender->addItem([
-            'label' => Yii::t('Humhub-chatModule.base', 'Basic Chat'),
+            'label' => Yii::t('HumhubChatModule.base', 'Basic Chat'),
             'url' => Url::toRoute('/humhub-chat/admin/index'),
             'group' => 'settings',
             'icon' => '<i class="fa fa-weixin"></i>',
-            'isActive' => Yii::$app->controller->module && Yii::$app->controller->module->id == 'humhub-chat' && Yii::$app->controller->id == 'admin',
+            'isActive' => Yii::$app->controller->module && Yii::$app->controller->module->id == 'humhub_chat' && Yii::$app->controller->id == 'admin',
             'sortOrder' => 650
         ]);
     }

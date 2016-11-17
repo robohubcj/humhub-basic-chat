@@ -17,7 +17,7 @@ class Assets extends AssetBundle
 
     public function init()
     {
-        $theme = Setting::Get('theme', 'humhubchat');
+        $theme = Setting::Get('theme', 'humhub_chat');
         if ($theme)
             $this->css = [
                 $theme

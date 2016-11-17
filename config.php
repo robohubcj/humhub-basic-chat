@@ -2,8 +2,13 @@
 namespace humhub\modules\humhubchat;
 
 return [
-    'id' => 'humhub-chat',
+    'id' => 'humhub_chat',
     'class' => 'humhub\modules\humhubchat\Module',
+    'modules' => [
+        'template' => [
+            'class' => 'humhub\modules\humhub_chat\modules\template\Module'
+        ],
+    ],
     'namespace' => 'humhub\modules\humhubchat',
     'events' => [
         [

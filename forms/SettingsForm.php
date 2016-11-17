@@ -48,8 +48,8 @@ class SettingsForm extends \yii\base\Model
     public function attributeLabels()
     {
         return [
-            'theme' => Yii::t('Humhub-chatModule.base', 'theme'),
-            'timeout' => Yii::t('Humhub-chatModule.base', 'timeout')
+            'theme' => Yii::t('HumhubChatModule.base', 'theme'),
+            'timeout' => Yii::t('HumhubChatModule.base', 'timeout')
         ];
     }
 }

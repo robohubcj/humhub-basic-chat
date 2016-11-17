@@ -82,7 +82,7 @@ class ChatController extends \humhub\components\Controller
         
         Yii::$app->response->format = 'json';
         return [
-            'online' => Yii::t('Humhub-chatModule.base', count($response) == 1 ? '{count} person online' : '{count} people online', [
+            'online' => Yii::t('HumhubChatModule.base', count($response) == 1 ? '{count} person online' : '{count} people online', [
                 '{count}' => count($response)
             ]),
             'users' => $response
