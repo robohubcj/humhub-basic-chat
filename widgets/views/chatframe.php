@@ -1,7 +1,7 @@
 <?php use yii\helpers\Url; ?>
 <div class="panel">
   <div class="panel-heading">
-    <?=Yii::t('HumhubChatModule.base', '<strong>Community</strong> Chat'); ?>
+    <?=Yii::t('HumhubChatModule.base', '<strong>Community</strong> Shoutbox'); ?>
   </div>
   <div class="panel-body">
     <div id="chatContainer">
